@@ -1,21 +1,21 @@
-size (500,500)
-
-fill (240,35,24)
-rect (200,100,100,300)
-
-triangle (200,100,300,100,250,30)
-
-
-strokeWeight (60)
-point (250,150)
-point (250,245)
-
-strokeWeight (1)
-
-fill (245,113,37)
-triangle (200,400,250,400,225,500)
-triangle (300,400,250,400,275,500)
-
-fill (255,255,255)
-triangle (150,300,200,300,200,150)
-triangle (300,300,350,300,300,150)
+y = 0
+def setup ():
+    size (200,500)
+    background (100)
+    
+def draw ():
+    global y
+    frameRate (15)
+    background (100)
+    translate (0,y)
+    translate (75,350)
+    fill (255,1,1)
+    rect (0,0,50,100)
+    fill (255,255,255)
+    triangle (0,0,50,0,25,-50)
+    translate (25,40)
+    ellipse (0,0,25,25)
+    translate (-25,58)
+    fill (242,115,51)
+    triangle (0,0,50,0,25,random(20,30))
+    y = y - 2
