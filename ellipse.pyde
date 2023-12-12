@@ -1,7 +1,13 @@
-def setup():
-    size (500,500)
-    
+a = 1
+def setup ():
+    size (1000,500)
 def draw ():
-    background (1)
-    frameRate (10)
-    ellipse (250,250,random(1,200),random(1,200))
+    frameRate (150)
+    global a 
+    a = a + 1
+    point (100,a)
+    if a >= 150:
+        translate (a,0)
+    strokeWeight (100)
+    ellipse (50,50,100,100)
+    
